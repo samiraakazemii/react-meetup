@@ -1,4 +1,4 @@
 const Newspages = () => {
-  return <h1>this is Newpages</h1>;
+  return <h1>This is Newpages</h1>;
 };
 export default Newspages;
