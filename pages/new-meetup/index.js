@@ -1,5 +1,12 @@
+import Layout from '../../components/layout/layout';
+import MeetupForm from '../../components/mettup/meetupForm';
+
 const NewMeetup = () => {
-  return <h1>NewMeetup</h1>;
+  return (
+    <Layout>
+      <MeetupForm />
+    </Layout>
+  );
 };
 
 export default NewMeetup;
