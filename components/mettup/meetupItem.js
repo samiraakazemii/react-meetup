@@ -1,6 +1,12 @@
-import style from './meetupItem.module.css';
+import { useRouter } from 'next/router';
 import Card from '../ui/card';
+import style from './meetupItem.module.css';
 const MeetupItem = (props) => {
+  const Router = useRouter();
+
+  const meetupDetailHandler = () => {
+    Router.push(`/${props.id}`);
+  };
   return (
     <li className={style.item}>
       <Card>
@@ -12,7 +18,7 @@ const MeetupItem = (props) => {
           <address>{props.address}</address>
         </div>
         <div className={style.action}>
-          <button>show Details</button>
+          <button onClick={meetupDetailHandler}>show Details</button>
         </div>
       </Card>
     </li>
