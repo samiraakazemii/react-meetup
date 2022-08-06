@@ -1,12 +1,10 @@
-import Layout from '../../components/layout/layout';
 import MeetupForm from '../../components/mettup/meetupForm';
 
 const NewMeetup = () => {
-  return (
-    <Layout>
-      <MeetupForm />
-    </Layout>
-  );
+  const AddMeetupHandler = (MeetupData) => {
+    console.log(MeetupData);
+  };
+  return <MeetupForm onAddMeetup={AddMeetupHandler} />;
 };
 
 export default NewMeetup;
