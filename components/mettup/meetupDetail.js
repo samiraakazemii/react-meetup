@@ -1,13 +1,13 @@
-import { Fragment } from 'react';
+import style from './meetupDetail.module.css';
 
 const MeetupDetail = ({ image, title, address, description }) => {
   return (
-    <Fragment>
+    <section className={style.Detail}>
       <img src={image} alt={title} />
       <h1>{title}</h1>
       <address>{address}</address>
       <p>{description}</p>
-    </Fragment>
+    </section>
   );
 };
 
