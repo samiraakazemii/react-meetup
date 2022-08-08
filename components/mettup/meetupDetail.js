@@ -1,6 +1,6 @@
 import style from './meetupDetail.module.css';
 
-const MeetupDetail = ({ image, title, address, description }) => {
+const MeetupDetail = ({ image, title, address, description, id }) => {
   return (
     <section className={style.Detail}>
       <img src={image} alt={title} />
